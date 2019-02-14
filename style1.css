@@ -23,12 +23,12 @@ h1 {
 }
 
 header {
-          max-width: 100%;
+width: 100%;
+height: 260px;
 padding: auto;
-  background-image: url(images/restaurant.jpg);
-  margin-bottom: 50px;
-  /*background-size: auto;
-  border: 5px solid black;*/
+background-image: url(images/restaurant.jpg);
+margin-bottom: 50px;
+background-size: auto;
 }
 
 .logo {
@@ -96,10 +96,9 @@ nav ul {
 }
 
 nav a {
-  padding: 1em;
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 nav a:hover {
@@ -107,23 +106,7 @@ nav a:hover {
   transition: 0.3s;
 }
 
-*/ @media all and (max-width: 800px) {
-  nav ul {
-    font-size: 18px;
-  }
 
-  nav li {
-    margin-left: 1px;
-    padding-top: 15px;
-    padding-right: 65px;
-  }
-
-  .logo {
-    float: left;
-    font-size: 1.2em;
-    padding: 10px 10px;
-  }
-}
 
 article {
   padding: 1em;
@@ -256,5 +239,57 @@ text-align: center;}
 width: 10%;
 font-size: 1vw;
 }
+
+{
+  box-sizing: border-box;
 }
+
+/* top nav bar style */
+.topnav {
+overflow: hidden;
+background-color: #333;
+letter-spacing: 1px;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+/* topnav links style */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  width: 33%;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+/* hover color change */
+.topnav a:hover {
+  background-color: #22A9D7;
+  color: black;
+transition: .3s;
+
+}
+
+
+/*
+nav{
+    font-size: 2.5em;
+        }
+
+  nav li {
+    margin-left: 1px;
+    padding-top: 15px;
+    padding-right: 65px;
+  }
+
+  .logo {
+    float: left;
+    font-size: 1.2em;
+    padding: 10px 10px;
+  }
+}
+}
+
 
