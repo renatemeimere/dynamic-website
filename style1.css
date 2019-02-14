@@ -4,9 +4,9 @@
 }
 
 body {
-  max-width: 1000px;
   margin: auto;
-  background-color: lightpink;
+  background-color: #f8f4eb;
+     margin: auto;
 }
 
 h1,
@@ -23,9 +23,9 @@ h1 {
 }
 
 header {
+          max-width: 100%;
+padding: auto;
   background-image: url(images/restaurant.jpg);
-  width: 1000px;
-  height: 200px;
   margin-bottom: 50px;
   /*background-size: auto;
   border: 5px solid black;*/
@@ -34,6 +34,7 @@ header {
 .logo {
   color: white;
   letter-spacing: 3px;
+    padding: 1em;
 }
 
 .product {
@@ -55,6 +56,8 @@ p {
 }
 
 section {
+      max-width: 1000px;
+ margin: auto;
   display: grid;
   grid-gap: 0.7em;
   grid-auto-rows: 1fr;
@@ -186,7 +189,11 @@ button {
 }
 
 .button {
-  width: 10%;
+width: 10%;
+font-size: 2vw;
+
+
+
 }
 
 .modal-bg {
@@ -205,7 +212,7 @@ button {
   height: 80%;
   margin-top: 5%;
   border: 3px solid green;
-  margin: 130px;
+  margin: auto;
 }
 
 .hide {
@@ -232,10 +239,22 @@ button {
 
 .modal-description {
   font-size: 1em;
-  padding: 0 13em;
 }
 
 .modal-price {
   font-size: 1em;
   padding: 30px;
 }
+
+@media all and (min-width: 800px) {
+
+.modal-content {
+padding: 0 5em;
+text-align: center;}
+
+.button {
+width: 10%;
+font-size: 1vw;
+}
+}
+
