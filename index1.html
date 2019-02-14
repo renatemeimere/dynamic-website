@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Restaurant Site</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" id="all">All</a>
+    </nav>
+
+    <header>
+        <h1 class="logo">PETROGRAD</h1>
+    </header>
+    <!--- <header>
+        <div class="container">
+            <h1 class="logo">Petrograd Restaurant</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reserve.html">Reserve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+
+
+    <main></main>
+
+    <div class="modal-bg hide">
+        <article class="modal-content">
+            <h1 class="modal-name">NAME</h1>
+            <img class="modal-image" src="data-image" alt="data-caption">
+            <p class="description">Description</p>
+            <p class="modal-description">data long description</p>
+            <h4 class="modal-price">data-price</h4>
+            <button class="button">Close</button>
+        </article>
+    </div>
+
+    <template id="myTemp">
+        <article>
+            <h1 class="product">NAME</h1>
+            <img src="IMG" alt="IMG">
+            <img class="vegetarian" src="images/vegan.png">
+            <img class="alcohol" src="images/wine.png">
+
+            <div class="style-1">
+                <del>
+                    <span class="amount">price kr</span>
+                </del>
+                <ins>
+                    <span class="amount">discount</span>
+                </ins> </div>
+            <button>See more</button>
+        </article>
+    </template>
+
+
+    <script src="js1.js"></script>
+</body>
+
+</html>

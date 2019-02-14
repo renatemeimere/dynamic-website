@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #e6e2e7;
+}
+
+h1,
+h2,
+h3,
+nav {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 100px;
+}
+
+header {
+  background-image: url(images/restaurant.jpg);
+  width: 1000px;
+  height: 200px;
+  margin-bottom: 50px;
+  /*background-size: auto;
+  border: 5px solid black;*/
+}
+
+.logo {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.product {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: #4caf50;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  display: grid;
+  grid-gap: 0.7em;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  padding-bottom: 100px;
+  padding-top: 10px;
+}
+
+article {
+  padding: 1em;
+  border: 1px solid;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVIGATION */
+
+nav {
+  float: right;
+  background-color: green;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  color: wheat;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: yellow;
+  transition: 0.3s;
+}
+
+*/ @media all and (max-width: 800px) {
+  nav ul {
+    font-size: 18px;
+  }
+
+  nav li {
+    margin-left: 1px;
+    padding-top: 15px;
+    padding-right: 65px;
+  }
+
+  .logo {
+    float: left;
+    font-size: 1.2em;
+    padding: 10px 10px;
+  }
+}
+
+article {
+  padding: 1em;
+  border: 2px solid;
+}
+
+.vegetarian,
+.alcohol {
+  max-width: 7%;
+}
+
+.style-1 del {
+  color: red;
+  text-decoration: line-through;
+  position: relative;
+}
+
+.style-1 &:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  border-top: 2px solid rgba(red, 0.8);
+  height: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-7deg);
+}
+
+ins {
+  color: green;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 1em 1em 1em 0.5em;
+}
+
+.soldout {
+  opacity: 0.3;
+}
+
+.overlay {
+  transform: translateY(-180px);
+  background-color: red;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 8px;
+  width: 40%;
+  float: right;
+}
+
+.button {
+  width: 10%;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  border: 3px solid green;
+  margin: 130px;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.modal-name {
+  text-align: center;
+  padding: 10px;
+}
+
+.description {
+  font-size: 2em;
+  text-align: center;
+  padding: 15px;
+}
+
+.modal-description {
+  font-size: 1em;
+  padding: 0 13em;
+}
+
+.modal-price {
+  font-size: 1em;
+  padding: 30px;
+}
